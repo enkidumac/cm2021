@@ -1,13 +1,26 @@
-.flex-container {
-    display: flex;
-    flex-wrap: block;
-    flex-direction: column;
-    background-color: DodgerBlue;
-  }
-  
-  .flex-container > div {
-    background-color: aqua;
-    width: 50px;
+.flex-container-column {
+  display: flex;
+  flex-wrap: block;
+  flex-direction: column;
+  background-color: DodgerBlue;
+}
+.flex-container-row {
+  display: flex;
+  flex-wrap: block;
+  flex-direction: row;
+  background-color: DodgerBlue;
+}
+.flex-container-column > div {
+  background-color: aqua;
+  width: 50px;
+  margin: 10px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 30px;
+}
+.flex-container-row > div {
+    background-color: rebeccapurple;
+    width: 500px;
     margin: 10px;
     text-align: center;
     line-height: 100px;
