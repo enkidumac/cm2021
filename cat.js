@@ -1,8 +1,12 @@
-var lista = [8, 88, 888];
-for (var i in lista) {
-    console.log(i); // klucze
+function showTitle(titleObject) {
+    alert(titleObject.title);
 }
-for (var _i = 0, lista_1 = lista; _i < lista_1.length; _i++) {
-    var i = lista_1[_i];
-    console.log(i); // wartości
-}
+var book = {
+    title: "Modyfikowny Wegiel",
+    author: "Richard Morgan"
+};
+var film = {
+    title: "django"
+};
+showTitle(book);
+showTitle(film);
