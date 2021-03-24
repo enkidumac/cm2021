@@ -1,5 +1,5 @@
 var book = {
-    title2: "Modyfikowny Wegiel",
+    title: "Modyfikowny Wegiel",
     author: "Richard Morgan",
     showTitle: function () {
         alert(this.title);

@@ -4,7 +4,7 @@ interface TitleValue {
 }
 
 var book = {
-    title2: "Modyfikowny Wegiel",
+    title: "Modyfikowny Wegiel",
     author: "Richard Morgan",
     showTitle(): void {
         alert(this.title);
