@@ -4,7 +4,7 @@ interface TitleValue {
 }
 
 var book = {
-    title: "Modyfikowny Wegiel",
+    title2: "Modyfikowny Wegiel",
     author: "Richard Morgan",
     showTitle(): void {
         alert(this.title);
@@ -20,6 +20,7 @@ class film implements TitleValue {
 
     showTitle(): void {
         alert(this.title);
+        //consol.log(this.title)
     }
 }
 

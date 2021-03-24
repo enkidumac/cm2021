@@ -1,5 +1,5 @@
 var book = {
-    title: "Modyfikowny Wegiel",
+    title2: "Modyfikowny Wegiel",
     author: "Richard Morgan",
     showTitle: function () {
         alert(this.title);
@@ -11,6 +11,7 @@ var film = /** @class */ (function () {
     }
     film.prototype.showTitle = function () {
         alert(this.title);
+        //consol.log(this.title)
     };
     return film;
 }());
