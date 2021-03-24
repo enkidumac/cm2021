@@ -1,6 +1,6 @@
 .flex-container-column {
   display: flex;
-  flex-wrap: block;
+  flex-wrap: wrap;
   flex-direction: column;
   background-color: DodgerBlue;
 }
