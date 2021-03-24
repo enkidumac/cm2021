@@ -1,12 +1,7 @@
-class Cat {
-    firstName: string;
-    weight: number;
- }
-
- let list: any[] = [ book, counter, 5 ];
- let something: [string, number] = [ book, counter ];
-
- let book:string = "Modyfikowany Wegiel";
- let counter: number = 5;
- let summary: string = `na magazynie mamy ${ counter + 1 } ksiazek o tytule ${ book }`
-  
+let lista: Array<Number> = [8, 88, 888]
+for (let i in lista) {
+    console.log(i); // klucze
+}
+for (let i of lista) {
+    console.log(i); // wartości
+}
