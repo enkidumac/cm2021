@@ -1,19 +1,29 @@
-interface TitleValue{
-    title: string
- }
+interface TitleValue {
+    title: string;
+    showTitle: () => void;
+}
 
- function showTitle(titleObject: TitleValue):void{
-    alert(titleObject.title);
- }
-
- let book = {
+var book = {
     title: "Modyfikowny Wegiel",
-    author: "Richard Morgan"
- }
+    author: "Richard Morgan",
+    showTitle(): void {
+        alert(this.title);
+    }
+};
 
- let film: TitleValue = {
-     title: "django"
- }
- showTitle(book);
- showTitle(film);
-  
+class film implements TitleValue {
+    title: string;
+
+    constructor(title: string) {
+        this.title = title;
+    }
+
+    showTitle(): void {
+        alert(this.title);
+    }
+}
+
+var django = new film("django");
+
+book.showTitle();
+django.showTitle();

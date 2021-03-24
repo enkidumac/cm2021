@@ -1,12 +1,19 @@
-function showTitle(titleObject) {
-    alert(titleObject.title);
-}
 var book = {
     title: "Modyfikowny Wegiel",
-    author: "Richard Morgan"
+    author: "Richard Morgan",
+    showTitle: function () {
+        alert(this.title);
+    }
 };
-var film = {
-    title: "django"
-};
-showTitle(book);
-showTitle(film);
+var film = /** @class */ (function () {
+    function film(title) {
+        this.title = title;
+    }
+    film.prototype.showTitle = function () {
+        alert(this.title);
+    };
+    return film;
+}());
+var django = new film("django");
+book.showTitle();
+django.showTitle();
