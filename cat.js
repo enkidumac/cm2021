@@ -1,24 +1,8 @@
-var book = {
-    title: "Modyfikowny Wegiel",
-    author: "Richard Morgan",
-    showTitle: function () {
-        alert(this.title);
+class Cat {
+    get name() {
+        return this._name;
     }
-};
-var film = /** @class */ (function () {
-    function film(title) {
-        this.title = title;
+    set name(value) {
+        this.name = value;
     }
-    film.prototype.showTitle = function () {
-        alert(this.title);
-        //consol.log(this.title)
-    };
-    return film;
-}());
-var django = new film("django");
-book.showTitle();
-django.showTitle();
-function ala(something) {
-    return something.title;
 }
-ala(book);

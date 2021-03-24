@@ -1,37 +1,9 @@
-interface TitleValue {
-    title: string;
-    showTitle: () => void;
-}
-
-var book = {
-    title: "Modyfikowny Wegiel",
-    author: "Richard Morgan",
-    showTitle(): void {
-        alert(this.title);
+class Cat {
+    private _name: string;
+    get name(): string {
+        return this._name;
     }
-};
-
-class film implements TitleValue {
-    title: string;
-
-    constructor(title: string) {
-        this.title = title;
-    }
-
-    showTitle(): void {
-        alert(this.title);
-        //consol.log(this.title)
+    set name(value: string) {
+        this.name = value;
     }
 }
-
-var django = new film("django");
-
-book.showTitle();
-django.showTitle();
-
-
-function ala(something: TitleValue) : string{
-    return something.title;
-}
-
-ala(book);
