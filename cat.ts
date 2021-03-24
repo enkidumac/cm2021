@@ -27,3 +27,10 @@ var django = new film("django");
 
 book.showTitle();
 django.showTitle();
+
+
+function ala(something: TitleValue) : string{
+    return something.title;
+}
+
+ala(book);

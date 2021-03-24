@@ -17,3 +17,7 @@ var film = /** @class */ (function () {
 var django = new film("django");
 book.showTitle();
 django.showTitle();
+function ala(something) {
+    return something.title;
+}
+ala(book);
